@@ -122,14 +122,14 @@ function buildCharts(sample) {
 
     // 1. Create the trace for the bubble chart.
     var trace2 = {
-      x: otu_ids.slice(0,10).reverse(),
-      y: sample_values.slice(0,10).reverse(),
-      text:otu_labels.slice(0,10).reverse(),
+      x: otu_ids,
+      y: sample_values,
+      text:otu_labels,
       mode:'markers',
       sizex: 'None',
       marker:{
-        size: sample_values.slice(0,10).reverse(),
-        color: otu_ids.slice(0,10).reverse(),
+        size: sample_values,
+        color: otu_ids,
         colorscale: 'earth'
       }         
    }
